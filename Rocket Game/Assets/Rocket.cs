@@ -18,8 +18,9 @@ public class Rocket : MonoBehaviour {
     }
 
     private void ProcessInput() {
-        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W)) {
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.UpArrow)) {
             rigidBody.AddRelativeForce(Vector3.up);
+            
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) {
 
